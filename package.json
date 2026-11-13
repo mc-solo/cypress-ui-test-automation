@@ -1,0 +1,23 @@
+{
+  "author": "Wondwosen Asegid",
+  "description": "Cypress + TypeScript UI and API test automation sample by a junior/mid-level SDET. UI tests run against public demo apps (TodoMVC and the Cypress Kitchen Sink); API tests run against JSONPlaceholder. No private backend, no real user data.",
+  "devDependencies": {
+    "cypress": "^13.17.0",
+    "typescript": "^5.6.3"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "name": "cypress-ui-test-automation",
+  "private": true,
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:verify": "cypress verify",
+    "test": "cypress run",
+    "test:api": "cypress run --spec \"cypress/e2e/api/**/*.cy.ts\"",
+    "test:ui": "cypress run --spec \"cypress/e2e/ui/**/*.cy.ts\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "version": "1.0.0"
+}
